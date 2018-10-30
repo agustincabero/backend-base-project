@@ -4,13 +4,14 @@
   "description": "Base Project en Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha --recursive --exit --timeout 10000"
+    "test": "cross-env NODE_ENV=test node_modules/.bin/mocha --recursive --exit --timeout 10000"
   },
   "author": "Diego y Casu",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
+    "cross-env": "^5.2.0",
     "dotenv": "^6.1.0",
     "exec-sql": "^2.0.2",
     "express": "^4.16.4",
